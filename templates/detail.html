@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Phone.uz</title>-->
+<!--</head>-->
+{% block content %}
+
+<img src="{{phone.image.url}}" alt=""><br>
+<h2>{{phone.name}} </h2> <br>
+    {{phone.model_p}} <br>
+    {{phone.price}} <br>
+    {{phone.phone_number}} <br>
+    {{phone.at_data}} <br>
+<a  href="{% url 'list-phone' %}"> Ortga--></a>
+<!--</html>-->
+{% endblock content %}

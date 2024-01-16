@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>phone.uz</title>-->
+<!--</head>-->
+{% block content %}
+
+<h1>Telefonlar</h1>
+{% for phone in phones %}
+    <img src="{{phone.image.url}}" alt=""><br>
+<!--   <h2> <a href="{% url 'detail-phone' phone.pk %)"> {{phone.name}} </a> </h2> <br>-->
+    <a href="{% url 'detail-phone' phone.pk %}"> {{phone.name}} </a> <hr>
+<!--    {{phone.model_p}} <br>-->
+<!--    {{phone.price}} <br>-->
+<!--    {{phone.phone_number}} <br>-->
+<!--    {{phone.at_data}}<hr>-->
+{% endfor %}
+<a  href="{% url 'home'  %}"> Ortga--></a>
+
+<!--</html>-->
+{% endblock content %}
